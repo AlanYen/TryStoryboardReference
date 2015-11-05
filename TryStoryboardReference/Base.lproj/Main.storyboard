@@ -1,13 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rOj-hU-BMu">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="LdE-1N-j2p">
+            <objects>
+                <navigationController id="rOj-hU-BMu" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="B73-aa-e73">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="tec-oz-Rjn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uxa-dC-a1A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-588" y="403"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +32,59 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foM-72-bUO">
+                                <rect key="frame" x="250" y="214" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="6rH-IZ-1N7"/>
+                                    <constraint firstAttribute="height" constant="30" id="Mlx-5y-1Ra"/>
+                                </constraints>
+                                <state key="normal" title="GoTo 3"/>
+                                <connections>
+                                    <segue destination="XT7-sN-Jtf" kind="show" identifier="MainToThird" id="9RF-BS-S6g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBb-Lk-4Xc">
+                                <rect key="frame" x="250" y="114" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0a2-KE-CZz"/>
+                                    <constraint firstAttribute="width" constant="100" id="pJ6-fo-Tzt"/>
+                                </constraints>
+                                <state key="normal" title="GoTo 2"/>
+                                <connections>
+                                    <segue destination="zLQ-yP-45L" kind="show" identifier="MainToSecond" id="ijf-Yn-8UX"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="foM-72-bUO" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="XDi-uH-iP9"/>
+                            <constraint firstItem="foM-72-bUO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XUg-UD-RkK"/>
+                            <constraint firstItem="oBb-Lk-4Xc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XWw-m2-ON7"/>
+                            <constraint firstItem="oBb-Lk-4Xc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="ePe-0b-y7X"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="OQO-ge-AAJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="94" y="403"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="LHo-eb-EnQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Second" id="zLQ-yP-45L" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G4K-wE-Zb8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="776" y="403"/>
+        </scene>
+        <!--Third-->
+        <scene sceneID="pUU-qW-gmb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Third" id="XT7-sN-Jtf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3AJ-sz-Nmf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="769" y="472"/>
         </scene>
     </scenes>
 </document>

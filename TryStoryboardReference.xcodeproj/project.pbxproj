@@ -15,6 +15,8 @@
 		2D254CD91BEB4309002CFA60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D254CD71BEB4309002CFA60 /* LaunchScreen.storyboard */; };
 		2D254CE41BEB430A002CFA60 /* TryStoryboardReferenceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D254CE31BEB430A002CFA60 /* TryStoryboardReferenceTests.m */; };
 		2D254CEF1BEB430A002CFA60 /* TryStoryboardReferenceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D254CEE1BEB430A002CFA60 /* TryStoryboardReferenceUITests.m */; };
+		2D254D021BEB43ED002CFA60 /* Second.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D254D001BEB43ED002CFA60 /* Second.storyboard */; };
+		2D254D041BEB4479002CFA60 /* Third.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D254D031BEB4479002CFA60 /* Third.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		2D254CEA1BEB430A002CFA60 /* TryStoryboardReferenceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TryStoryboardReferenceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D254CEE1BEB430A002CFA60 /* TryStoryboardReferenceUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TryStoryboardReferenceUITests.m; sourceTree = "<group>"; };
 		2D254CF01BEB430A002CFA60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D254D011BEB43ED002CFA60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Second.storyboard; sourceTree = "<group>"; };
+		2D254D031BEB4479002CFA60 /* Third.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Third.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +107,11 @@
 			children = (
 				2D254CCC1BEB4309002CFA60 /* AppDelegate.h */,
 				2D254CCD1BEB4309002CFA60 /* AppDelegate.m */,
+				2D254D031BEB4479002CFA60 /* Third.storyboard */,
 				2D254CCF1BEB4309002CFA60 /* ViewController.h */,
 				2D254CD01BEB4309002CFA60 /* ViewController.m */,
 				2D254CD21BEB4309002CFA60 /* Main.storyboard */,
+				2D254D001BEB43ED002CFA60 /* Second.storyboard */,
 				2D254CD51BEB4309002CFA60 /* Assets.xcassets */,
 				2D254CD71BEB4309002CFA60 /* LaunchScreen.storyboard */,
 				2D254CDA1BEB4309002CFA60 /* Info.plist */,
@@ -243,9 +249,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D254D021BEB43ED002CFA60 /* Second.storyboard in Resources */,
 				2D254CD91BEB4309002CFA60 /* LaunchScreen.storyboard in Resources */,
 				2D254CD61BEB4309002CFA60 /* Assets.xcassets in Resources */,
 				2D254CD41BEB4309002CFA60 /* Main.storyboard in Resources */,
+				2D254D041BEB4479002CFA60 /* Third.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +330,14 @@
 				2D254CD81BEB4309002CFA60 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2D254D001BEB43ED002CFA60 /* Second.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D254D011BEB43ED002CFA60 /* Base */,
+			);
+			name = Second.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -412,6 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TryStoryboardReference/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-7Life.TryStoryboardReference";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +440,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TryStoryboardReference/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-7Life.TryStoryboardReference";
 				PRODUCT_NAME = "$(TARGET_NAME)";

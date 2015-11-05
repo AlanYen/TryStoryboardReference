@@ -16,7 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    // 參考 http://blog.csdn.net/nyh1006/article/details/49509003
+    self.title = @"Storyboard Reference";
 }
 
 - (void)didReceiveMemoryWarning {
